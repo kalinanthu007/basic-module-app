@@ -1,1 +1,20 @@
 /* You can add global styles to this file, and also import other style files */
+
+.mainComponent {
+    margin: 10px;
+    border: 5px solid green;
+    padding: 5px;
+}
+
+.combineComponent {
+    margin: 10px;
+    border: 3px solid brown;
+    padding: 5px;
+    display: inline-flex;
+}
+
+.individualComponent {
+    padding: 10px;
+    border: 2px solid rgb(222, 135, 215);
+    margin: 5px;
+}

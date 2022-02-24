@@ -1,0 +1,35 @@
+<h2 style="color: blue;">
+    From Vehicle Module</h2>
+<h3 style="color: chocolate;"> Component - List Vehicle</h3>
+<p>list-vehicle works!</p>
+
+
+<h4> List Vehicle Status</h4>
+
+<!-- <ul *ngFor="let item of vehicleData">
+    <li>{{item.first_name}}</li>
+</ul> -->
+
+<div style="width: 1000px;">
+    <table class="table  table-bordered">
+        <thead>
+            <tr>
+                <th>Vehicle ID</th>
+                <th>Name</th>
+                <th>Status</th>
+                <th>Maintenance Status</th>
+                <th>Plate No</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let item of vehicleData">
+                <td>{{item.id}}</td>
+                <td>{{item.first_name}}</td>
+                <td>{{item.last_name}}</td>
+                <td>{{item.id}}</td>
+                <td>{{item.avatar}}</td>
+
+            </tr>
+        </tbody>
+    </table>
+</div>
