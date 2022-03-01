@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit,Output,EventEmitter } from '@angular/core';
 
 
 // Import Service
@@ -10,13 +10,21 @@ import {MaintenanceService} from '../maintenance.service'
   styleUrls: ['./list-maintenance-service.component.css']
 })
 export class ListMaintenanceServiceComponent implements OnInit {
+  @Output() customEvent = new EventEmitter<any>()
+  listMaintenanceServiceComponentTitle:any='Maara'
 
   constructor(private service: MaintenanceService) {
     this.listService()
+    this.customEvent.emit(this.listMaintenanceServiceComponentTitle)
   }
+  // listMaintenanceServiceComponentTitle:any='Maintenance Service List - Data'
+
   result: any;
   serviceData: any;
 
+  click() {
+    this.customEvent.emit(this.listMaintenanceServiceComponentTitle)
+  }
 
   ngOnInit(): void {
   }

@@ -3,9 +3,14 @@
 <h3 style="color: chocolate;"> Component - List Maintenance Service</h3>
 <p>list-maintenance-service works!</p>
 
-
+<hr>
+<h1>{{listMaintenanceServiceComponentTitle}}</h1>
+<hr>
 <h4> List Some Maintenance Service Name</h4>
 
 <ul *ngFor="let item of serviceData">
     <li>{{item.first_name}}</li>
 </ul>
+
+<hr>
+<app-maintenance-report></app-maintenance-report>
